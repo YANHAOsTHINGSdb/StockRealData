@@ -1,0 +1,47 @@
+本TradeX.dll的破解版只用于学习研究，请下载的朋友不要用于非法用途，一切后果你们自行承担。
+
+
+文件 tra.graspl.ini 存在的两项配置，与Logon有关，自行修改
+[config]
+Qsid=117
+AccountType=50
+
+
+通达信的模拟服务器，登录不了了，显示版本太低，但绝大部分券商的服务器是登录正常的，
+我等了那么长的时间，TradeX那帮狗日的也没能解决新版通达信的登录问题，看来这个接口快没戏了。
+
+
+我本人增加的登录函数 "LogonEx"
+typedef int (WINAPI* FLogonEx)(
+		int nQsid,
+		const char *pszHost,
+		short nPort,
+		const char *pszVersion,
+		short nYybID,
+		char nAccountType,
+		const char *pszAccountNo,
+		const char *pszTradeAccount,
+		const char *pszJyPassword,
+		const char *pszTxPassword,
+		char *pszErrInfo);
+
+
+
+
+
+下面让我来吐槽吐槽：
+
+TradeX = trade.dll + tdxhqapi.dll + tdxexhqapi.dll + tdxl2hqapi.dll
+
+乍眼一看让人感觉TradeX很强大的样子。
+
+但它到底做了些什么呢？把别人的东西集成在一个dll里，然后四处招摇，啊，你们看，这是我们做的，可是4合1哦，完美兼容Trade.dll，
+我们可是天才型团队，哈哈哈哈。
+
+我发现TradeX这帮子狗日的，也不是完全没有自主开发能力，但是我也发现他们的能力是很有限的，
+除非那些原作者能支持他们，找出新版通达信的解决之道，不然TradeX也持续不了多久了，少则半年。
+
+对于TradeX这帮子狗日的，我很反感，盗取他人的东西，标榜成自己的，还加了个VMP的壳，自以为TradeX.dll是铜墙铁壁，无人能破。
+与2017年5月的那版相比，8月的这版在载入速度上慢的惊人，我的高级电脑单单载入就跑了6秒有多。可想而知加密得有多严了。
+
+他妈的太坑了！所以我也加了个VMP壳玩玩，哈哈哈哈！
