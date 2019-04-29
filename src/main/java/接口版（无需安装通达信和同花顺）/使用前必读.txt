@@ -1,0 +1,18 @@
+-------- 网格魔方使用说明 --------
+
+网格魔方分两种一键安装包：
+1.专业版：采用按月付费的方式（菜单【帮助】）
+2.接口版：采用一次性付费的方式（菜单【帮助】－【购买软件】）
+
+* 支持trade/TradeX/TradeX2免费和付费的交易接口
+* 券商的实盘账号不需要安装同花顺和通达信客户端
+
+玩转自动化的网格交易系统三步曲：
+第一步、一键安装：http://www.sut90.com/grid-trading-system-setup
+第二步、参数配置：http://www.sut90.com/grid-trading-system-configuration
+第三步、注册授权：http://www.sut90.com/license
+
+    
+代购交易接口（优惠50元）：http://www.sut90.com/buy
+网格交易交流QQ群：518782403
+客服QQ：121427918

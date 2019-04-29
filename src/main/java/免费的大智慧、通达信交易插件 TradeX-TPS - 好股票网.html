@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://www.goodgupiao.com/soft/downcopy.asp?id=44875 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网</title>
+<meta name="keywords" content="免费的大智慧、通达信交易插件 TradeX-TPS">
+<link href="http://www.goodgupiao.com/favicon.ico" type="image/x-icon" rel="icon">
+<link href="http://www.goodgupiao.com/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<link href="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/base.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" async="" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/pr.js"></script><script type="text/javascript" async="" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/auto_ds"></script><script type="text/javascript" async="" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/gaeiak.js"></script><script src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/main.js" type="text/javascript"></script>
+<script src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/msclass.js" type="text/javascript"></script>
+<script type="text/javascript">
+//function $(ob){	return document.getElementById(ob);}
+function drop_mouseout(pos){
+	var posSel=$(pos+"Sel").style.display;
+	if(posSel=="block"){
+		timer = setTimeout("drop_hide('"+pos+"')", 1000);
+	}
+}
+function drop_hide(pos){
+	$(pos+"Sel").style.display="none";
+}
+function drop_mouseover(pos){
+	try{window.clearTimeout(timer);}catch(e){}
+}
+function search_channel(pos,st,href){
+	var frm = document.searchform;
+    frm.m.value=st;
+    $(pos+"Sel").style.display="none";
+	$("btnsearch1").title=href.innerHTML;
+	try{window.clearTimeout(timer);}catch(e){}
+	return false;
+}
+</script>
+</head>
+<body>
+<!-- // Header Start -->
+<div class="header">
+	<div class="topBar">
+		<div class="w960 fn-clear">
+			<div class="home-sign fn-left" id="loginbarx">
+			好股票网今日更新股票软件: <font color="red"><b>14</b></font> 个 共有股票软件公式: <font color="red"><b>53519</b></font> 个 总容量: <font color="red"><b>262.067</b></font> G | 共有文章: <font color="red"><b>9016</b></font> 篇
+			</div>
+			<div class="a-link fn-right">
+			<p>
+			<a target="_self" id="a-home" onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a>
+			<em>&nbsp;</em>
+			<a target="_self" id="a-clo" onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+			<em>&nbsp;</em>
+			<a id="a-lang" class="color" href="http://www.goodgupiao.com/zhuomian.asp" title="将好股票放到桌面">将好股票放到桌面</a>
+			</p>
+			</div>
+		</div>
+	</div>
+	<!-- // topBar Start -->
+	<div class="headBar w960 fn-clear">
+		<div class="logo fn-left">
+		<a href="http://www.goodgupiao.com/"><img class="png-img" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/logo.png" alt=""></a>
+		</div>
+		<!-- // Logo End -->
+		<div class="searchBar fn-right">
+			<div class="hisBox fn-left">
+			<a href="http://www.goodgupiao.com/weilaihanshujiance.html" class="logo-do" target="_blank"></a>
+			</div>
+			<!-- // hisBox End -->
+
+			<div class="help-gb fn-right">
+				<p><a href="http://www.goodgupiao.com/soft/html/newlist-1.html" target="_blank">最新软件</a></p>
+				<p><a class="gb" href="http://www.goodgupiao.com/soft/html/hotlist-1.html" target="_blank">热门软件</a></p>
+			</div>
+			<!-- help-gb end -->
+			
+			<div class="searchBox fn-right">
+				<div class="search">
+				<form id="search" name="searchform" method="get" action="http://www.goodgupiao.com/search.asp">
+				<input type="hidden" name="m" value="2"><input type="hidden" name="s" value="0"><input type="text" id="kw" name="word" class="input-txt" value="请在此处输入股票软件或股票公式名称。" onfocus="if(this.value==&#39;请在此处输入股票软件或股票公式名称。&#39;){this.value=&#39;&#39;;}" onblur="if(this.value==&#39;&#39;){this.value=&#39;请在此处输入股票软件或股票公式名称。&#39;;};"><input type="submit" id="searchbutton" class="input-btn" value="">
+				</form>
+				</div>
+			<!-- // search End -->
+			</div>
+			<!-- // searchBox End -->
+			
+			<div class="hotKeys"><strong>热门搜索：</strong><a href="http://www.goodgupiao.com/search.asp?word=%B4%F3%D6%C7%BB%DB" target="_blank">大智慧</a><a href="http://www.goodgupiao.com/search.asp?word=%CD%AC%BB%A8%CB%B3" target="_blank">同花顺</a><a href="http://www.goodgupiao.com/search.asp?word=%CD%A8%B4%EF%D0%C5" target="_blank">通达信</a><a href="http://www.goodgupiao.com/search.asp?word=%B4%F3%D6%C7%BB%DB%B3%AC%D3%AE" target="_blank">大智慧超赢</a><a href="http://www.goodgupiao.com/search.asp?word=%B2%D9%C5%CC%CA%D6" target="_blank">操盘手</a><a href="http://www.goodgupiao.com/search.asp?word=%C3%E2%B7%D1%B0%E6" target="_blank">免费版</a><a href="http://www.goodgupiao.com/search.asp?word=%C7%AE%C1%FA" target="_blank">钱龙</a><a href="http://www.goodgupiao.com/search.asp?word=level-2" target="_blank">level-2</a><a href="http://www.goodgupiao.com/search.asp?word=%CB%BD%C4%BB" target="_blank">私幕</a><a href="http://www.goodgupiao.com/search.asp?word=%D6%B8%C4%CF%D5%EB" target="_blank">指南针</a><a href="http://www.goodgupiao.com/search.asp?word=%B7%C9%BA%FC" target="_blank">飞狐</a><a href="http://www.goodgupiao.com/search.asp?word=%CC%D8%B1%F0%B0%E6" target="_blank">特别版</a><a href="http://www.goodgupiao.com/search.asp?word=%B7%D6%CE%F6%BC%D2" target="_blank">分析家</a><a href="http://www.goodgupiao.com/search.asp?word=%BA%CD%D0%B3" target="_blank">和谐</a><a href="http://www.goodgupiao.com/search.asp?word=%BD%F0%C8%DA%D6%D5%B6%CB" target="_blank">金融终端</a>
+			</div>
+			<!-- // hotKeys End -->
+		</div>
+		<!-- // searchBar End -->
+	</div>
+	<!-- // headBar End -->
+	
+	<div class="menuBar">
+		<div class="menu w960 fn-clear">
+			<ul>
+				<li class="current"><a target="_self" href="http://www.goodgupiao.com/">首页</a></li>
+				<li><a target="_self" href="http://www.goodgupiao.com/soft/gupiaofenxi/list1_1.html">股票分析软件</a></li>
+				<li><a target="_self" href="http://www.goodgupiao.com/soft/gupiaojiaoyi/list2_1.html">股票交易软件</a></li>
+				<li><a target="_self" href="http://www.goodgupiao.com/soft/gupiaohangqing/list3_1.html">股票行情软件</a></li>
+				<li><a target="_self" href="http://www.goodgupiao.com/soft/shoujichaogu/list5_1.html">手机炒股软件</a></li>
+				<li><a target="_self" class="xt" href="http://www.goodgupiao.com/soft/gupiaobook/list7_1.html">股票电子书</a></li>
+				<li><a target="_self" class="xt" href="http://www.goodgupiao.com/gupiaozhengquan/index.html">股票证券软件</a></li>
+				<li class="currentimpoart"><a target="_self" class="xt" href="http://www.goodgupiao.com/gupiaogongshi/index.html">股票公式</a></li>
+			</ul>
+		</div>
+		<!-- // Menu End -->
+	</div>
+	<!-- // navBar End -->
+	<div class="navBar">
+		<div class="nav w960 fn-clear">
+			<div class="index-tags fn-clear">
+				<div class="index-tags-tv fn-left">
+					<label class="tv">股票公式：</label>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_30_1.html">大智慧L2</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_31_1.html">通达信</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_32_1.html">同花顺</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_33_1.html">飞狐</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_142_1.html">操盘手</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_143_1.html">分析家</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/gupiaogongshi/list_144_1.html">指南针</a>
+				</div>
+				<div class="index-tags-movie fn-right">
+					<label class="movie">股票资讯：</label>
+					<a href="http://www.goodgupiao.com/article/gupiaormen/list18_1.html">股票入门</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/article/gupiaozhishi/list19_1.html">股票知识</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/article/chaogujingyan/list20_1.html">炒股经验</a>
+					<em>|</em>
+					<a href="http://www.goodgupiao.com/article/chaoguvideo/list21_1.html">炒股视频</a>
+				</div>
+			</div>
+		</div>
+		<!-- // Nav End -->
+	</div>
+	<!-- // navBar End -->
+</div>
+<!-- // Header End -->
+<script type="text/javascript">
+var oQueryKeyword=document.getElementById("searchwordbox");
+var searchInstallDir='/';
+var oSearchForm = document.searchform;
+var dataQueryParam = "&channelid=0&l=32";	/*参数说明，channelid=频道ID，l=限制标题长度，n=最多查询结果数*/
+if (navigator.cookieEnabled && !/sugAutoComplete=0/.test(document.cookie)) {
+	document.getElementById('searchwordbox').setAttribute('autocomplete', 'off');
+	document.write('<s'+'cript src="/js/searchsug.js"><\/s'+'cript>'); (function initAutoQuery() {
+		if (!window.newasp) {
+			setTimeout(initAutoQuery, 10);
+		} else {
+			window.newasp.init()
+		}
+	})()
+}
+window.onunload = function() {};
+</script>
+<style type="text/css">
+<!--
+img{border:none;}
+#downCopyBox {clear:both;background:#f1f5f6;margin:0;padding:0;width:auto;overflow:hidden;}
+#ubb {clear:both;margin:5px 6px;padding:5px;border:1px solid #d1d7dc;background:#fff;overflow:hidden;}
+#copy {clear:both;margin:5px 6px;padding:5px;}
+.btn {margin:6px0;color:#2D4C76;font-size:14px;font-weight:bold;line-height:24px;height:24px;cursor:pointer;float:right;}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function copyDocument(id){
+	var obj = null;
+	if (document.getElementById) {
+		obj = document.getElementById(id);
+	} else if (document.all)	{
+		obj = document.all[id];
+	} else if (document.layers) {
+		obj = document.layers[id];
+	}
+	if (document.all){
+		var rng = document.body.createTextRange();
+		rng.moveToElementText(obj);
+		rng.scrollIntoView();
+		rng.select();
+		rng.execCommand("Copy");
+		rng.collapse(false);
+	}else{
+		copyToClipboard(obj.innerHTML);
+	}
+	alert('该软件信息已复制，到论坛直接粘贴即可。');
+}
+
+function copyToClipboard(txt) {
+     if(window.clipboardData) {
+             window.clipboardData.clearData();
+             window.clipboardData.setData("Text", txt);
+     } else if(navigator.userAgent.indexOf("Opera") != -1) {
+          window.location = txt;
+     } else if (window.netscape) {
+          try {
+               netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+          } catch (e) {
+               alert("被浏览器拒绝！\n请在浏览器地址栏输入'about:config'并回车\n然后将'signed.applets.codebase_principal_support'设置为'true'");
+          }
+          var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+          if (!clip)
+               return;
+          var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+          if (!trans)
+               return;
+          trans.addDataFlavor('text/html');
+          var str = new Object();
+          var len = new Object();
+          var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+          var copytext = txt;
+          str.data = copytext;
+          trans.setTransferData("text/html",str,copytext.length*2);
+          var clipid = Components.interfaces.nsIClipboard;
+          if (!clip)
+               return false;
+          clip.setData(trans,null,clipid.kGlobalClipboard);
+     }
+}
+//-->
+</script>
+
+<script type="text/javascript"> 
+Object.MAX_WIDTH = 690; 
+Object.MAX_HEIGHT = 2000; 
+</script>
+<!-- // wrap Start -->
+<div class="wrap w960">
+	<div class="maxBox ui-sponsortop"><div class="Adv_c"><a href="http://lmpz88.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/lm.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.8881884.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/hty.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://jinniu89.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/jnpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://jxpz888.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/jpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.pz66999.com/register/id/6112573.html" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/hepz.gif" width="960" height="100" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div class="Adv_c"><a href="http://dzpz6.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/dz.jpg" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://sjcl7.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/sj.jpg" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="https://www.q8885a.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/mpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div class="Adv_c"><a href="http://pz7775.com/Member/common/register?invite=16070" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/jcpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div class="Adv_c"><a href="http://50.pz55.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/mdpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div class="Adv_c"><a href="http://www.pz75.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/sf.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.yipz6.com/register?recommendCode=1095" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/ypz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.9cgp.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/cycp.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="https://www.797950.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/ryf.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.hxpz0.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/hxpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.pz1997.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/hfpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div class="Adv_c"><a href="http://www.800646.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/yzs.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="Adv_c"><a href="http://www.8880pz.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/xhpz.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div class="Adv_c"><a href="http://nhpz5.com/#good" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/nh.gif" width="960" height="50" border="0"><img class="adms" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/a0.png"></a></div><div style="height:1px;"></div><div class="pubtext" id="pubtextnone"><table summary="Text Ad" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="25%"><a href="http://www.yzskj.com/" target="_blank" class="ad_hong">永之胜 权威配资官网</a></td><td width="25%"><a href="http://www.pz75.com/" target="_blank" class="ad_hong">顺发配资 1-10倍杠杆&gt;注册送1888</a></td><td width="25%"><a href="http://ch.jxpz8.com/" target="_blank" class="ad_lan">简配资全网最大的配资网 信誉NO1</a></td><td width="25%"><a class="ad_hong" target="_blank" href="http://www.hxpz0.com/"> 涵星配资 申请领取5888操盘金</a></td></tr><tr><td width="25%"><a href="http://jinniu89.com/" target="_blank" class="ad_lan">金牛配资 实力专业股票配资平台</a></td><td width="25%"><a href="http://www.yipz6.com/register?recommendCode=1095" target="_blank" class="ad_hong">亿配资 下载AAP送88元</a></td><td width="25%"><a href="http://www.6803.cn/" target="_blank" class="ad_lan">兴华股票配资 申请即送8888操盘金</a></td><td width="25%"><a class="ad_hong" target="_blank" href="http://www.pz66999.com/register/id/6112573.html">鸿E配资 注册领取8888元操盘金</a></td></tr><tr><td width="25%"><a href="http://nhpz5.com/#good" target="_blank" class="ad_hong">牛弘配资 专业配资 注册送3000元</a></td><td width="25%"><a href="http://dzpz6.com/" target="_blank" class="ad_lan">鼎泽配资 注册领取8888元现金操盘</a></td><td width="25%"><a href="http://www.8881884.com/" target="_blank" class="ad_hong">红太阳配资 权威的股票配资 返1%</a></td><td width="25%"><a class="ad_lan" target="_blank" href="http://lmpz88.com/"> 联美配资 注册即送3888 杠杆1-10倍</a></td></tr><tr><td width="25%"><a href="http://t.cn/E6Vzly7" target="_blank" class="">股票开户 券商账户 实盘交易</a></td><td width="25%"><a href="http://t.cn/E6Vzly7" target="_blank" class="ad_hong">官方股票配资平台 月息低至0.6%</a></td><td width="25%"><a href="http://t.cn/E6Vzly7" target="_blank" class="">3G配资平台 1-10倍杠杆 收益翻倍</a></td><td width="25%"><a class="ad_hong" target="_blank" href="http://t.cn/E6Vzly7">我出钱您炒股 注册即送5000操盘金</a></td></tr></tbody></table></div></div>
+	<!-- // End -->
+	
+	<div class="position w960 fn-clear"><div class="fn-left">您现在的位置：<a href="http://www.goodgupiao.com/">好股票网</a> &gt;&gt; <a href="http://www.goodgupiao.com/soft/">股票软件</a> &gt;&gt; <a href="http://www.goodgupiao.com/soft/othergupiao/list6_1.html">其他股票软件</a> &gt;&gt;  一键转帖：<a href="http://www.goodgupiao.com/soft/softdown.asp?softid=44875">免费的大智慧、通达信交易插件 TradeX-TPS</a></div></div>
+
+	<div class="main">
+		<div class="row_download">
+			<div class="col_a">
+				<!--banner begin-->
+				<div class="dl_banner"><script type="text/javascript" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/softdown_728_90_1.js"></script></div>
+				<!--banner end-->
+				
+				<!--软件介绍 begin-->
+				<div class="mod_box soft_intro_part">
+					<div class="hd_box">
+						<h2><span class="tit_box" style="color:green">免费的大智慧、通达信交易插件 TradeX-TPS</span></h2>
+					</div>
+					<div class="bd_box">
+						<div class="intro_con">
+							<div id="downCopyBox">
+								<div id="copy"><button class="btn" type="submit" onclick="copyDocument(&#39;ubb&#39;)">点击复制内容</button></div>
+									<div id="ubb"><br>
+										软件名称：[B]免费的大智慧、通达信交易插件 TradeX-TPS[/B]<br>
+										软件类型：其他股票软件<br>
+										运行平台：Win7/Vista/WinXP/Win2003/<br>
+										软件语言：简体中文<br>
+										授权方式：共享版<br>
+										软件大小：278 KB<br>
+										更新时间：2017-04-26 19:28:00<br>
+										软件简介:
+										<br>
+										<p>TradeX TPS 交易插件系统(标准版) v1.0 <br>
+<br>
+版本描述： <br>
+1）符合大智慧、通达信规范的插件，通过TradeX.dll或Trade.dll连接券商服务器， <br>
+实现股票买入、卖出、撤单、预设比例清仓，查询账户信息、持仓、可撤单信息； <br>
+2）支持通达信、大智慧的股票池和预警公式系统； <br>
+3）兼容TradeX.dll、Trade.dll等交易接口； <br>
+4）标准版免费。 <br>
+<br>
+下一版将增加： <br>
+1）日志输出、消息对话框功能； <br>
+2）QQ信息、邮件、微信信息发送；</p>
+<p>【TPS插件系统目录】</p>
+<p>.\TPSvr\<br>
+TPSvr.exe --&gt; TPS交易插件服务器<br>
+TPSvr.ini --&gt; TPS配置文件<br>
+TradeX.dll --&gt; TradeX.dll交易/行情接口DLL<br>
+TradeX.lic --&gt; TradeX授权许可文件<br>
+Trade-mock.dll --&gt; Trade.dll交易接口DLL<br>
+TradeX.xml --&gt; 券商数据格式配置文件（一键打新等）<br>
+TradeX-L2.ini --&gt; Level 2行情配置文件<br>
+*.dll --&gt; 其他所需的32位MFC DLL文件</p>
+<p>.\插件\<br>
+XP.dll --&gt; 插件DLL文件<br>
+XP.ini --&gt; 插件配置文件</p>
+<p>【关于账户配置】<br>
+<br>
+1. TPS支持TradeX.dll和Trade.dll交易接口；<br>
+<br>
+2. 本目录的TradeX.lic适用于所有的模拟交易账户，配置文件缺省为net828@163.com，如需使用其他模拟账户，可以直接修改TPSvr.ini文件；<br>
+<br>
+3. Trade.dll则已内置了模拟账户：net828@163.com，如需使用其他模拟账户，请自行修改Trade.dll和TPSvr.ini。</p>
+<p>4. TradeX.lic付费用户，只需将已购买的TradeX.lic复制到本目录，并修改TPSvr.ini即可；<br>
+<br>
+5. Trade.dll用户，只需将自己的Trade.dll复制到本目录，并修改TPSvr.ini即可使用。<br>
+<br>
+【快速安装】</p>
+<p>1. 复制XP插件（XP.dll, XP.ini）到通达信~\T0002\dlls目录；<br>
+<br>
+2. 直接启动TPSvr.exe; 默认启动模拟交易账户“net828@163.com”。</p><br>
+										[url=http://www.goodgupiao.com/soft/othergupiao/down-44875.html][B]免费的大智慧、通达信交易插件 TradeX-TPS[/B][/url]
+										<br><br>
+										<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/icon_download.gif" border="0" align="absMiddle"><a href="thunder://QUFodHRwOi8vc29mdGRvd24uZ29vZGd1cGlhby5jb20vVXBsb2FkRmlsZS8yMDE3LTQvZ29vZGd1cGlhby5jb21AVHJhZGVYLVRQUy5yYXJaWg==" target="_blank"><b><span style="font-weight:bold;color:blue;"><span style="font-weight:bold;color:red;">迅雷专用高速下载</span></span></b></a><br><br>
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/icon_download.gif" border="0" align="absMiddle"><a href="http://softdown.goodgupiao.com/UploadFile/2017-4/goodgupiao.com@TradeX-TPS.rar" target="_blank"><b><span style="font-weight:bold;color:blue;"><span style="color:#006400;">扬州电信高速下载</span></span></b></a><br><br>
+
+									</div>
+								</div>
+							<br>
+						</div>
+						
+						
+					</div>
+				</div>
+				<!--软件介绍 end-->
+				
+				<!--banner begin-->
+				<div class="dl_banner"><script type="text/javascript" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/softdown_728_90_2.js"></script><style>
+.bbs_txt{margin-left:7px;overflow:hidden;*zoom:1;}
+.bbs_txt li{padding:0 0 0 4px;height:26px;line-height:26px;overflow:hidden;font-size:16px;width:700px;}
+.bbs_txt li a:hover{text-decoration: none;}
+</style>
+
+<div class="mod_box hot_tech_part">
+	<div class="hd_box">
+	<span class="tit_box">推荐股票指标公式</span>
+		<a class="more" href="http://www.goodgupiao.com/zhibiao/" target="_blank">更多&gt;&gt;</a>
+	</div>
+	<div class="bd_box" id="recomTech">
+	<ul class="bbs_txt">
+
+<li><a href="http://www.goodgupiao.com/zhibiao/thread-89.htm" title="【30金币】精准捕捉牛股行情启爆点、专吃超牛主升浪、不惧怕洗盘的主力资金全程监控指标(含选股)" target="_blank"><span style="color:#D9534D;font-weight:bold;">【30金币】精准捕捉牛股行情启爆点、专吃超牛主升浪、不惧怕洗盘的主力资金全程监控指标(含选股)</span></a></li><li><a href="http://www.goodgupiao.com/zhibiao/thread-87.htm" title="【20金币】戴维全新研编/93%胜率今买明卖2018版金钻指标热浪来袭！" target="_blank"><span style="color:#D9534D;font-weight:bold;">【20金币】戴维全新研编/93%胜率今买明卖2018版金钻指标热浪来袭！</span></a></li><li style="color:#;font-weight:bold;"><a href="http://www.goodgupiao.com/zhibiao/thread-84.htm" title="【VIP贵宾免费福利】金钻牛满仓 独门绝技秒抓涨停板 捕捉强势股超短机会 演绎捕牛记" target="_blank"><span style="color:#337AB7;font-weight:bold;">【VIP贵宾免费福利】金钻牛满仓 独门绝技秒抓涨停板 捕捉强势股超短机会 演绎捕牛记</span></a></li><li><a href="http://www.goodgupiao.com/zhibiao/thread-83.htm" title="【VIP贵宾免费福利】犀牛捉妖系统全套指标 犀牛AK57捉妖+犀牛OBV+犀牛主力线" target="_blank"><span style="color:#D9534D;font-weight:bold;">【VIP贵宾免费福利】犀牛捉妖系统全套指标 犀牛AK57捉妖+犀牛OBV+犀牛主力线</span></a></li><li style="color:#;font-weight:bold;"><a href="http://www.goodgupiao.com/zhibiao/thread-80.htm" title="【50金币】通达信MACD多周期 日周月 / 15分 30分 60分 120分钟 同屏呈现指标" target="_blank"><span style="color:#5CB85C;font-weight:bold;">【50金币】通达信MACD多周期 日周月 / 15分 30分 60分 120分钟 同屏呈现指标</span></a></li><li style="color:#;font-weight:bold;"><a href="http://www.goodgupiao.com/zhibiao/thread-77.htm" title="【120金币】【封龙擒牛 临门一脚】一套牛熊通吃的强牛启动交易系统" target="_blank"><span style="color:#5BC0DE;font-weight:bold;">【120金币】【封龙擒牛 临门一脚】一套牛熊通吃的强牛启动交易系统</span></a></li><li><a href="http://www.goodgupiao.com/zhibiao/thread-76.htm" title="【30金币】◆擒牛捉妖王 伏妖剑◆擒牛捉妖股专用指标，让每个月的牛股妖股都无处遁形！" target="_blank"><span style="color:#D9534D;font-weight:bold;">【30金币】◆擒牛捉妖王 伏妖剑◆擒牛捉妖股专用指标，让每个月的牛股妖股都无处遁形！</span></a></li><li><a href="http://www.goodgupiao.com/zhibiao/thread-73.htm" title="【35金币】唯一一个确定性买卖【出手必赢】+【猎杀k线】+潜伏股票池 抄底加仓卖出信号准" target="_blank"><span style="color:#D9534D;font-weight:bold;">【35金币】唯一一个确定性买卖【出手必赢】+【猎杀k线】+潜伏股票池 抄底加仓卖出信号准</span></a></li><li style="color:#;font-weight:bold;"><a href="http://www.goodgupiao.com/zhibiao/thread-56.htm" title="【30金币】涨停风暴 专抓连续涨停的强势指标 【抓板神器】" target="_blank"><span style="color:#F0AD4E;font-weight:bold;">【30金币】涨停风暴 专抓连续涨停的强势指标 【抓板神器】</span></a></li><li style="color:#;font-weight:bold;"><a href="http://www.goodgupiao.com/zhibiao/thread-52.htm" title="【40金币】多因子量化交易系统《 股市绝顶武功 》90％吃肉 笑傲牛熊市的涨停启动板交易技巧" target="_blank"><span style="color:#5BC0DE;font-weight:bold;">【40金币】多因子量化交易系统《 股市绝顶武功 》90％吃肉笑傲牛熊市的涨停启动板交易技巧</span></a></li>	</ul>
+	</div>
+</div>
+</div>
+				<!--banner end-->
+				
+			</div>
+			
+			<div class="col_b">
+				<!--下载栏目导航 begin-->
+				<div class="mod_box mod_box_style">
+					<div class="hd_box">
+						<h2><span class="tit_box">软件下载</span></h2>
+					</div>
+					<div class="bd_boxdown">
+						<span>找到您需要的资源啦！？</span><br>
+						本站所有软件高速免费下载，记得下次再来哦，好股票网是您下载的首选！
+						<a target="_self" href="javascript:;" onclick="window.external.AddFavorite(&quot;http://www.goodgupiao.com/&quot;,&quot;好股票网-最新免费股票软件下载&quot;)"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/scicon.png"></a>
+						
+						<ul>
+							<li style="background-color:#f5f9f2;">软件大小：<font color="#fa6e00"><b>278 KB</b></font></li>
+							<li>下载次数：<font color="#fa6e00"><b>166</b></font></li>
+							<li style="background-color:#f5f9f2;">更新时间：<font color="#386bb1">2017-04-26 19:28:00</font></li>
+						</ul>
+						
+						<div class="adress">
+							<ul>
+								<li><a href="http://www.goodgupiao.com/soft/download.asp?softid=44875&amp;downid=2&amp;id=24380" target="_blank" title="&lt;span style=&quot;font-weight:bold;color:red;&quot;&gt;迅雷专用高速下载&lt;/span&gt;"><b><span style="font-weight:bold;color:blue;"><span style="font-weight:bold;color:red;">迅雷专用高速下载</span></span></b></a></li><li><a href="http://www.goodgupiao.com/soft/download.asp?softid=44875&amp;downid=3&amp;id=24380" target="_blank" title="&lt;span style=&quot;color:#006400;&quot;&gt;扬州电信高速下载&lt;/span&gt;"><b><span style="font-weight:bold;color:blue;"><span style="color:#006400;">扬州电信高速下载</span></span></b></a></li>
+							</ul>
+						</div>
+						
+						不能下载请<a class="distinct" onclick="window.open(&#39;/common/error.asp?softid=44875&#39;,&#39;error&#39;,&#39;width=200,height=100,resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no&#39;)" href="javascript:">报告错误</a>,谢谢！
+					</div>
+				</div>
+
+
+
+				<!--广告位 begin-->
+				<div class="dl_banner160"><script type="text/javascript" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/index_160-600.js"></script><div id="_260ykdczwxca39lncvb4fjq0k9" style=""><iframe width="220" frameborder="0" height="600" scrolling="no" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/s.html"></iframe></div><script type="text/javascript" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/cxptmwmpt.js"></script>
+</div>
+				<!--广告位 end-->
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- // wrap End -->
+<!-- // footer Start -->
+<div class="footer">
+	<div class="w960">
+		<div class="foot-nav"><a class="color" href="http://www.goodgupiao.com/support/help.asp" target="_blank" title="下载帮助" style="cursor:help">下载帮助(？)</a>-<a href="http://www.goodgupiao.com/support/about.asp" target="_blank" title="关于本站">关于本站</a>-<a class="color" href="http://www.goodgupiao.com/support/declare.asp" target="_blank" title="版权声明">版权声明</a>-<a href="http://www.goodgupiao.com/support/advertise.asp" target="_blank" title="广告服务">广告服务</a>-<a href="http://www.goodgupiao.com/support/public.asp" target="_blank" title="软件提交">软件提交</a>-<a href="http://www.goodgupiao.com/link/" target="_blank" title="友情连接">友情连接</a>-<a href="http://www.goodgupiao.com/sitemap.html" target="_blank" title="网站地图">网站地图</a>-<script language="javascript" type="text/javascript" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/2015047.js"></script><a href="https://www.51.la/?comId=2015047" title="51.La 网站流量统计系统" target="_blank"><span style="display:inline-block;background-color:#25C6DA;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;">51La</span></a>
+<noscript>&lt;a href="http://www.51.la/?2015047" target="_blank"&gt;&lt;img alt="&amp;#x6211;&amp;#x8981;&amp;#x5566;&amp;#x514D;&amp;#x8D39;&amp;#x7EDF;&amp;#x8BA1;" src="http://img.users.51.la/2015047.asp" style="border:none" /&gt;&lt;/a&gt;</noscript>-<a href="http://www.goodgupiao.com/soft/rssfeed.asp" target="_blank" title="RSS订阅">RSS订阅</a>
+</div>
+		<!-- // foot-nav End -->
+		<div class="copyright"><p>声明：本站以非盈利为目的，所有信息都是免费的。站内所有网站导航 、及涉及到的所有链接，如遇收费行为，均与本站无任何关系！</p><p>若本站收录的软件无意侵犯了贵司版权，请给网页底部邮箱地址来信，我们会及时处理和回复，谢谢</p><p><a class="color" href="http://www.goodgupiao.com/">好股票网www.goodgupiao.com 股票软件 股票公式 证券软件下载</a></p><p>好股票网欢迎和各大公司进行内容及模式上合作，同时接受股票软件的发布。</p><p><img class="png-img" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/email.gif" alt=""></p></div>
+		<!-- // copyright End -->
+		<div class="foot-weibo"><p><script type="text/javascript" src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/footer.js"></script><a href="http://www.goodgupiao.com/" target="_blank"><img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/footbg.png" width="476" height="53" border="0" alt=""></a>
+</p></div>
+		<!-- // maxBox End -->
+	</div>
+</div>
+<!-- // footer End -->
+<a href="javascript:void(0);" id="back_top" class="back_top" style="display: block;"></a>
+<script src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/backTop.js"></script><div style="">
+<div id="DLAdsl" style="top:5px; left:10px; width:120px; position:fixed; z-index:999;" class="Adv_c">
+<a rel="nofollow" href="http://hl6066.com/" target="_blank">
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/hlpz.gif" width="120" height="220">
+</a>
+</div>
+</div> 
+<div style="">
+<div id="DLAdsr" style="top:5px; right:10px; width:120px; position:fixed; z-index:999;" class="Adv_c">
+<a rel="nofollow" href="http://hl6066.com/" target="_blank">
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/hlpz.gif" width="120" height="220">
+</a>
+</div>
+</div> 
+<div style="">
+<div id="DLAdzl" style="top:227px; left:10px; width:120px; position:fixed; z-index:999;" class="Adv_c">
+<a rel="nofollow" href="https://www.pz88.com/" target="_blank">
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/jlyp.gif" width="120" height="220">
+</a>
+</div>
+</div> 
+<div style="">
+<div id="DLAdzr" style="top:227px; right:10px; width:120px; position:fixed; z-index:999;" class="Adv_c">
+<a rel="nofollow" href="https://www.pz88.com/" target="_blank">
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/jlyp.gif" width="120" height="220">
+</a>
+</div>
+</div> 
+<div style="">
+<div id="DLAdxl" style="top:449px; left:10px; width:120px; position:fixed; z-index:999;" class="Adv_c">
+<a rel="nofollow" href="https://www.yinhegushi.com/" target="_blank">
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/yhgs.gif" width="120" height="250">
+</a>
+</div>
+</div> 
+<div style="">
+<div id="DLAdxr" style="top:449px; right:10px; width:120px; position:fixed; z-index:999;" class="Adv_c">
+<a rel="nofollow" href="https://www.yinhegushi.com/" target="_blank">
+<img src="./免费的大智慧、通达信交易插件 TradeX-TPS - 好股票网_files/yhgs.gif" width="120" height="250">
+</a>
+</div>
+</div> 
+<script language="javascript" type="text/javascript"> 
+document.body.oncopy = function () { 
+setTimeout( function () { 
+var text = clipboardData.getData("text"); 
+if (text) { 
+text = text + "\r\n{ 原文链接："+location.href + " }"; 
+clipboardData.setData("text", text); 
+} 
+}, 100 ) 
+} 
+</script>
+
+<div class="back2top_fat"><a href="javascript:;" class="b_img" style="display: none;"></a><a href="javascript:;" class="two_code"><span></span></a></div>
+
+<div class="sidebar" id="sidebar">
+	<div class="sidebar_bg"></div>
+	<div class="sidebar_wrapper">
+		<a href="http://www.goodgupiao.com/soft/index.html" id="sidebar_soft"></a>
+		<a href="http://www.goodgupiao.com/gupiaogongshi/index.html" id="sidebar_gupiaogongshi"></a>
+		<a href="http://www.goodgupiao.com/gupiaozhengquan/index.html" id="sidebar_gupiaozhengquan"></a>
+		<a href="http://www.goodgupiao.com/article/index.html" id="sidebar_article"></a>
+	</div>
+</div>
+
+</body></html>

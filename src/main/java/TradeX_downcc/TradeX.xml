@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<TradeX Version="1.0">
+
+<!-- TradeX-TPS交易插件系统 -->
+<!-- “TradeX.xml”针对券商的数据字段提供了统一映射，用户通过正确匹配自己当前券商的中文字段名称，可以实现轻松查询不同券商的数据 -->
+
+  <QsResult>
+  
+    <Func Name="QueryData-0" Desc="资金" TotalCapitalization="总资产" AvailableCapital="可用资金" MarketCapitalization="最新市值" >
+      <Qs Id="117" Name="模拟交易" TotalCapitalization="资金余额" />
+	  <Qs Id="4" Name="国信证券" TotalCapitalization="资金余额" />
+	  <Qs Id="16" Name="招商证券" TotalCapitalization="资金余额" />
+	  <Qs Id="44" Name="华福证券" TotalCapitalization="总资产" />
+	  <Qs Id="70" Name="中信万通" TotalCapitalization="资金余额" />
+	  <Qs Id="71" Name="信达证券" TotalCapitalization="资金余额" MarketCapitalization="在途资金" />
+    </Func>
+
+    <Func Name="QueryData-1" Desc="股份" StockCode="证券名称" Quantity="证券数量" TradableQuantity="可卖数量" CostPrice="成本价" OpenProfitLost="浮动盈亏" PercentPL="盈亏比例(%)" OpenEquity="最新市值" MarketCategory="帐号类别" >
+	  <Qs Id="4" Name="国信证券" CostPrice="成本价" OpenProfitLost="浮动盈亏" PercentPL="盈亏比例%" OpenEquity="最新市值" />
+      <Qs Id="16" Name="招商证券" CostPrice="成本价" OpenProfitLost="浮动盈亏" PercentPL="盈亏比例%" OpenEquity="最新市值" />
+      <Qs Id="40" Name="国金证券" CostPrice="参考成本价" OpenProfitLost="参考浮动盈亏" PercentPL="参考盈亏比例%" OpenEquity="最新市值" />
+	  <Qs Id="44" Name="华福证券" CostPrice="成本价" OpenProfitLost="摊薄浮动盈亏" PercentPL="盈亏比例(%)" OpenEquity="最新市值" />
+      <Qs Id="55" Name="华泰证券" OpenEquity="最新市值" />
+	  <Qs Id="70" Name="中信万通" Quantity="参考持股" TradableQuantity="可用股份" />
+    </Func>
+
+    <Func Name="QueryData-4" Desc="可撤单" StockCode="证券名称" BuySellFlag="买卖标志" SubmitQty="委托数量" SubmitTime="委托时间" SubmitId="委托编号" MarketCategory="交易所代码" >
+    </Func>
+
+    <Func Name="QueryData-5" Desc="股东代码" ShareHolderCode="股东代码" MarketCategory="帐号类别" TradeAccount="主帐号标志">
+      <Qs Id="117" Name="模拟交易" MarketCategory="帐号类别" />
+	  <Qs Id="4" Name="国信证券" MarketCategory="帐号类别" />
+	  <Qs Id="16" Name="招商证券" MarketCategory="帐号类别" />
+	  <Qs Id="44" Name="华福证券" MarketCategory="帐号类别" TradeAccount="资金帐号" />
+	  <Qs Id="70" Name="中信万通" MarketCategory="帐号类别" />
+    </Func>
+
+    <Func Name="QueryData-12" Desc="可申购新股查询" StockCode="证券代码" MaxQuantity="最高数量" MinQuantity="最低数量" IssuePrice="发行价格">
+      <Qs Id="4" Name="国信证券" MaxQuantity="申购上限" MinQuantity="申购下限" IssuePrice="委托价格" />
+	  <Qs Id="12" Name="广发证券" IssuePrice="委托价格" />
+	  <Qs Id="44" Name="华福证券" MaxQuantity="最高数量" MinQuantity="最低数量" IssuePrice="委托价格" />
+      <Qs Id="55" Name="华泰证券" MaxQuantity="申购上限" MinQuantity="申购下限" IssuePrice="委托价格" />
+	  <Qs Id="70" Name="中信万通"  IssuePrice="发行价格" />
+    </Func>
+
+    <Func Name="QueryData-13" Desc="新股申购额度查询" TradeAccount="资金账号" AccountCategory="帐号类别" ExchangeName="交易所名称" MarketCap="新股申购额度">
+	  <Qs Id="4" Name="国信证券" MarketCap="市值额度" />
+      <Qs Id="12" Name="广发证券" MarketCap="市值额度" />
+	  <Qs Id="44" Name="华福证券" MarketCap="市值额度" />
+	  <Qs Id="70" Name="中信万通" MarketCap="市值额度" />
+    </Func>
+
+  </QsResult>
+
+</TradeX>
