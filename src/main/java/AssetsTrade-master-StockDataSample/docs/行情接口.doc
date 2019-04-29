@@ -1,0 +1,47 @@
+
+
+/// <param name="IP">服务器IP,可在券商通达信软件登录界面“通讯设置”按钮内查得</param>
+/// <param name="Port">服务器端口</param>
+/// <param name="Result">此API执行返回后，Result内保存了返回的查询数据, 形式为表格数据，行数据之间通过\n字符分割，列数据之间通过\t分隔。一般要分配1024*1024字节的空间。出错时为空字符串。</param>
+/// <param name="ErrInfo">此API执行返回后，如果出错，保存了错误信息说明。一般要分配256字节的空间。没出错时为空字符串。</param>
+/// <returns>成功返货true, 失败返回false</returns>
+//bool  Tdx L2Hq_Connect(char* IP, int Port, char* Result, char* ErrInfo);//连接券商行情服务器
+/// TdxL2Hq_Connect("61.152.107.173",7707,Result, ErrInfo);
+
+
+
+/// <param name="Market">市场代码,   0->深圳     1->上海, 第i个元素表示第i个证券的市场代码</param>
+/// <param name="Zqdm">证券代码, Count个证券代码组成的数组</param>
+/// <param name="Count">API执行前,表示用户要请求的证券数目,最大50(不同券商可能不一样,具体数目请自行咨询券商或测试), API执行后,保存了实际返回的数目</param>
+/// <param name="Result">此API执行返回后，Result内保存了返回的查询数据, 形式为表格数据，行数据之间通过\n字符分割，列数据之间通过\t分隔。一般要分配1024*1024字节的空间。出错时为空字符串。</param>
+/// <param name="ErrInfo">此API执行返回后，如果出错，保存了错误信息说明。一般要分配256字节的空间。没出错时为空字符串。</param>
+/// <returns>成功返货true, 失败返回false</returns>
+
+bool  TdxL2Hq_GetSecurityQuotes10
+ (byte Market[], char* Zqdm[], short& Count, char* Result, char* ErrInfo);
+
+//void  Tdx L2Hq_Disconnect();//断开服务器
+
+
+typedef bool  (WINAPI*TdxL2Hq_ConnectDelegate)(char* IP, int Port, char* Result, char* ErrInfo);
+typedef void  (WINAPI*TdxL2Hq_DisconnectDelegate)();
+typedef bool  (WINAPI*TdxL2Hq_GetSecurityQuotesDelegate)(byte Market[], char* Zqdm[], short& Count, char* Result, char* ErrInfo);
+HMODULE TdxApiHMODULE = LoadLibraryA("TdxHqApi.dll");
+
+TdxL2Hq_ConnectDelegate TdxL2Hq_Connect = (TdxL2Hq_ConnectDelegate)GetProcAddress(TdxApiHMODULE, "TdxL2Hq_Connect");
+TdxL2Hq_DisconnectDelegate TdxL2Hq_Disconnect = (TdxL2Hq_DisconnectDelegate)GetProcAddress(TdxApiHMODULE, "TdxL2Hq_Disconnect");
+
+TdxL2Hq_GetSecurityQuotes10Delegate TdxL2Hq_GetSecurityQuotes10 = (TdxL2Hq_GetSecurityQuotes10Delegate)GetProcAddress(TdxApiHMODULE, "TdxL2Hq_GetSecurityQuotes10");
+
+
+
+
+
+
+
+
+
+
+
+
+

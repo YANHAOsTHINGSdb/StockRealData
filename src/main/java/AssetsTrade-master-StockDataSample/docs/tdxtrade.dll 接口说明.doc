@@ -1,0 +1,88 @@
+ //szHost 服务器ip
+ //nPort 服务器端口
+void SetServer(char *szHost, int nPort)//设置服务器信息
+
+// szAccount  用户账号
+// szPassword 交易密码
+// szVerifyCode 通讯密码
+void SetAccount(char* szAccount, char *szPassword, char *szVerifyCode)//设置账号信息
+//返回true 登陆成功可以进行交易
+//Flase 登陆失败 可以调用GetReturnInfo获取服务器返回信息
+bool Login()//登陆
+
+
+
+// sCode 股票代码
+//sNum 数量
+//sPrice 买入价格 2为小数
+int ToBuy(char *sCode,int sNum,float sPrice, char* Result, char* ErrInfo)//下买单
+
+
+// sCode 股票代码
+//sNum 数量
+//sPrice 买入价格 2为小数
+int ToSell(char *sCode,int sNum,float sPrice, char* Result, char* ErrInfo)//下卖单
+
+//每次调用接口后如果失败了 可以调用这个函数获取服务器的一些信息
+char*  GetReturnInfo(void)//获取服务器返回信息
+
+// sCode 股票代码
+// szNumber 下单后得到的委托号
+// Result返回表格数据, 行数据之间通过\n字符分割，列数据之间通过\t分隔
+// ErrInfo如果失败 返回服务器错误信息
+
+void CancelOrder (char *sCode,char* szNumber, char* Result, char* ErrInfo) //撤单指令
+
+//flag  查询持仓 0  委托 1   成交 2   资金  3  
+// Result返回表格数据, 行数据之间通过\n字符分割，列数据之间通过\t分隔
+// ErrInfo如果失败 返回服务器错误信息
+Void QueryData (int flag,char* Result, char* ErrInfo);//查询委托
+
+
+
+//start   查询的开始日期  //20151010
+//end     查询结束日期
+// Result返回表格数据, 行数据之间通过\n字符分割，列数据之间通过\t分隔
+// ErrInfo如果失败 返回服务器错误信息
+Void QueryHistoryData (char* start ,char* end,char* Result, char* ErrInfo);//查询历史成交
+
+
+//start   查询的开始日期  //20151010
+//end     查询结束日期
+// Result返回表格数据, 行数据之间通过\n字符分割，列数据之间通过\t分隔
+// ErrInfo如果失败 返回服务器错误信息
+Void QueryHistoryMoney (char* start ,char* end,char* Result, char* ErrInfo);//查询资金流水
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
