@@ -1,0 +1,90 @@
+
+通达信数据格式
+
+   文件存储路径：tdx\T0002\hq_cache\block.dat
+    文件存储格式：
+        文件头：384字节
+        板块个数：2字节
+        各板块数据存储结构（紧跟板块数目依次存放）
+            每个板块占据的存储空间为2812个字节，可最多包含399个个股
+                板块名称：9字节
+                该板块包含的个股个数：2字节
+                板块类别：2字节
+                该板块下个股代码列表（连续存放，直到代码为空）
+                    个股代码：7字节
+自定义板块存储数据结
+板块名称文件：\tdx\T0002\block.cfg
+    存储结构：
+              空白：4字节
+              板块名称：10字节字符串
+              板块简码：5字节字符串
+自定义的各板块个股存储
+          文件名：tdx\T0002\blocknew\  +  自定义板块简码（与block.cfg文件中的各板块简码同）
+      数据存储结构：
+             个股分隔符：2字节
+             个股属性代码：1字节（1:表示上证；0:表示深证）
+             个股名称：6字节
+ 
+日K线数据格式
+
+
+ 
+struct TdxRecord {     // 日K线数据结构
+  unsigned int date;   // e.g. 20100304
+  int _open;           // *0.01 开盘价
+  int _high;           // *0.01 最高价
+  int _low;            // *0.01 最低价
+  int _close;          // *0.01 收盘价
+  float amount;        // 成交额
+  int vol;             // 成交量(手)
+  int reserved;       
+ 
+  float open(){  return 0.01*_open; }
+  float high(){  return 0.01*_high; }
+  float low(){   return _low*0.01; }
+  float close(){ return _close*0.01; }
+};
+日记文件数据格式
+
+
+ 
+ 
+struct TdxDiary_Idx {
+  int   id;        // 0xffffffff = deleted, auto incr
+  char  dummy1;    // = 0x00
+  char  symbol[7]; // 7 char = 6 char symbol + 1 char '\0'
+  int   date;      // 20110407
+  int   time;      // 13:14:25 = 131425
+  int   weather;   // 00 = 晴, 01=阴, 02=雨, 03=雪
+  char  title[64]; // title
+  int   offset;    // offset in "symbol.cnt"
+  int   length;    // content length
+  int   date2;     // date2 = date
+  int   time2;     // time2 = time
+ 
+  void set(const char *symbol, const char *title, int offset, int length){
+    memset(this->symbol, '\0', 7);
+    memset(this->title, '\0', 64);
+    this->dummy1 = '\0';
+    this->weather=0x03;
+    strcpy(this->symbol, symbol);
+    strcpy(this->title, title);
+    this->offset = offset;
+    this->length = length;
+  }
+  void datetime(int date, int time){
+    this->date  = date; this->time  = time;
+    this->date2 = date; this->time2  = time;
+  }
+};
+股票代码和名称数据格式
+
+
+ 
+ 
+struct TdxSymbolMap {
+  char symbol[6];    // 6 digits
+  char dummy1[18]
+  char name[8];      // 4 characters in GB2312
+  char dummy2[218];
+}
